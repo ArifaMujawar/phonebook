@@ -1,11 +1,17 @@
+
+const dotenv = require("dotenv");
+
+dotenv.config();
 const express = require("express");
-require("dotenv").config();
+//require("dotenv").config();
+
+
 const Person = require("./models/persons");
 
 const app = express();
 const morgan = require("morgan");
 const cors = require("cors");
-const mongoose = require("mongoose");
+
 const { response } = require("express");
 
 // const Person = mongoose.model("Person", personSchema);
